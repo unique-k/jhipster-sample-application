@@ -1,11 +1,11 @@
 
-entity Contact{
+entity Contacts{
 	firstname String 
     lastname String
     email String
 }
 
-paginate Contact with infinite-scroll
+paginate Contacts with infinite-scroll
 
 
 

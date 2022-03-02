@@ -8,6 +8,7 @@
       "entities": {
         "main": "Entities",
         "contact": "Contact",
+        "contacts": "Contacts",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

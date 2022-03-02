@@ -1,0 +1,40 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="contacts">
+      <h2 data-cy="contactsDetailsHeading"><span jhiTranslate="jhipsterSampleApplicationApp.contacts.detail.title">Contacts</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ contacts.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.contacts.firstname">Firstname</span></dt>
+        <dd>
+          <span>{{ contacts.firstname }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.contacts.lastname">Lastname</span></dt>
+        <dd>
+          <span>{{ contacts.lastname }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterSampleApplicationApp.contacts.email">Email</span></dt>
+        <dd>
+          <span>{{ contacts.email }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/contacts', contacts.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

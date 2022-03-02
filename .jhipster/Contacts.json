@@ -1,0 +1,28 @@
+{
+  "applications": "*",
+  "changelogDate": "20220302214543",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "contacts",
+  "fields": [
+    {
+      "fieldName": "firstname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastname",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Contacts",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
